@@ -22,10 +22,6 @@
   当前默认占据地图
 - `cvrp_planner/params/`
   默认参数与 Nav2 参数
-## 备注
-
-- 运行产物如 `build/`、`install/`、`log/`、策略图、结果 XML 和 Isaac 临时生成文件默认已忽略。
-- 许可证：`MIT`，见 `LICENSE`。
 
 ## 当前默认流程
 
