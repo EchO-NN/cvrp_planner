@@ -1,0 +1,23 @@
+# ROS 2 / colcon
+build/
+install/
+log/
+.ros_log_test/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local tooling
+.codex
+.codex/
+
+# Isaac generated assets
+scripts/isaac/generated/
+cvrp_planner/maps/*.calibration.json
+cvrp_planner/maps/full_warehouse_native_map.*
+
+# Runtime outputs
+cvrp_planner/params/cvrp_solution.xml
+cvrp_planner/params/cvrp_solution_vehicle_*.xml
+cvrp_planner/params/cvrp_strategy_preview.png

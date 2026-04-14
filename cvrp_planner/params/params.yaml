@@ -1,0 +1,52 @@
+params_generator:
+  ros__parameters:
+    robot_names: '["robot_0", "robot_1", "robot_2", "robot_3"]'
+    robot_pose_topics: '["/robot_0/chassis/odom", "/robot_1/chassis/odom", "/robot_2/chassis/odom", "/robot_3/chassis/odom"]'
+    robot_pose_type: 'odometry'
+    robot_starts: '[[-22.6, 12.0], [-3.0, 19.0], [-12.0, -6.0], [-8.5, 29.0]]'
+    use_robot_starts_as_world_pose: true
+    odometry_is_relative: true
+    odometry_origin_positions: '[[-22.6, 12.0], [-3.0, 19.0], [-12.0, -6.0], [-8.5, 29.0]]'
+    odometry_origin_yaws_deg: '[90.0, 90.0, 90.0, 90.0]'
+    customers: '[[-21.2, 2.5], [-21.5, -10.9], [-8.5, 12.8], [1.8, 16.9], [1.6, 22.5], [-1.0, 4.9]]'
+    demands: '[1, 2, 3, 4, 2, 3]'
+    num_vehicles: 4
+    vehicle_capacities: '[20, 20, 20, 20]'
+    follow_waypoints_actions: '["/robot_0/follow_waypoints", "/robot_1/follow_waypoints", "/robot_2/follow_waypoints", "/robot_3/follow_waypoints"]'
+    auto_dispatch: true
+    map_path: 'maps/manual_map_from_MAP.yaml'
+    calculating_time: 5
+    inflate_size: 5
+    real_length: 31.793563711
+    origin_pixel: '[0, 0]'
+    origin_world: '[-26.338, 30.604138046000003]'
+    frame_id: 'map'
+    pose_wait_timeout: 10.0
+    nav2_wait_timeout: 60.0
+    visualize: true
+cvrp_planner_node:
+  ros__parameters:
+    robot_names: '["robot_0", "robot_1", "robot_2", "robot_3"]'
+    robot_pose_topics: '["/robot_0/chassis/odom", "/robot_1/chassis/odom", "/robot_2/chassis/odom", "/robot_3/chassis/odom"]'
+    robot_pose_type: 'odometry'
+    robot_starts: '[[-22.6, 12.0], [-3.0, 19.0], [-12.0, -6.0], [-8.5, 29.0]]'
+    use_robot_starts_as_world_pose: true
+    odometry_is_relative: true
+    odometry_origin_positions: '[[-22.6, 12.0], [-3.0, 19.0], [-12.0, -6.0], [-8.5, 29.0]]'
+    odometry_origin_yaws_deg: '[90.0, 90.0, 90.0, 90.0]'
+    customers: '[[-21.2, 2.5], [-21.5, -10.9], [-8.5, 12.8], [1.8, 16.9], [1.6, 22.5], [-1.0, 4.9]]'
+    demands: '[1, 2, 3, 4, 2, 3]'
+    num_vehicles: 4
+    vehicle_capacities: '[20, 20, 20, 20]'
+    follow_waypoints_actions: '["/robot_0/follow_waypoints", "/robot_1/follow_waypoints", "/robot_2/follow_waypoints", "/robot_3/follow_waypoints"]'
+    auto_dispatch: true
+    map_path: 'maps/manual_map_from_MAP.yaml'
+    calculating_time: 5
+    inflate_size: 5
+    real_length: 31.793563711
+    origin_pixel: '[0, 0]'
+    origin_world: '[-26.338, 30.604138046000003]'
+    frame_id: 'map'
+    pose_wait_timeout: 10.0
+    nav2_wait_timeout: 60.0
+    visualize: true

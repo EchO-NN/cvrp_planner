@@ -1,0 +1,93 @@
+{
+  "scene_name": "full_warehouse_multi_nav_scene",
+  "stage_url": "/Isaac/Environments/Simple_Warehouse/full_warehouse.usd",
+  "viewport": {
+    "eye": [
+      -6.0,
+      -15.5,
+      6.5
+    ],
+    "target": [
+      -6.0,
+      10.5,
+      -1.0
+    ]
+  },
+  "robots": [
+    {
+      "name": "robot_0",
+      "namespace": "robot_0",
+      "type": "nova_carter_ros",
+      "position": [
+        -22.6,
+        12.0,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "capacity": 20
+    },
+    {
+      "name": "robot_1",
+      "namespace": "robot_1",
+      "type": "nova_carter_ros",
+      "position": [
+        -3.0,
+        19.0,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "capacity": 20
+    },
+    {
+      "name": "robot_2",
+      "namespace": "robot_2",
+      "type": "nova_carter_ros",
+      "position": [
+        -12.0,
+        -6.0,
+        0.0
+      ],
+      "yaw_deg": 90.0,
+      "capacity": 20
+    },
+    {
+      "name": "robot_3",
+      "namespace": "robot_3",
+      "type": "nova_carter_ros",
+      "position": [
+        -8.5,
+        29.0,
+        0.2
+      ],
+      "yaw_deg": 90.0,
+      "capacity": 20
+    }
+  ],
+  "minimum_separation_m": 4.0,
+  "vehicle_capacity_default": 20,
+  "ros_bridge": {
+    "disable_cameras": true,
+    "enable_front_2d_lidar": true,
+    "enable_back_2d_lidar": false,
+    "enable_front_3d_lidar": false,
+    "publish_without_verification": true
+  },
+  "cvrp_export": {
+    "frame_id": "map",
+    "real_length": 100.0,
+    "origin_pixel": [
+      0,
+      0
+    ],
+    "origin_world": [
+      -50.0,
+      20.0
+    ],
+    "calculating_time": 3,
+    "inflate_size": 5,
+    "pose_wait_timeout": 10.0,
+    "nav2_wait_timeout": 15.0,
+    "auto_dispatch": true,
+    "visualize": false
+  }
+}
