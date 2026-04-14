@@ -276,9 +276,6 @@ class CVRPPlannerGUINode(Node, QMainWindow):
 
         if not map_path:
             return
-        if not os.path.exists(map_path):
-            self.get_logger().warn(f'地图文件不存在: {map_path}')
-            return
 
         try:
             map_config = load_map_config(map_path)
@@ -287,6 +284,7 @@ class CVRPPlannerGUINode(Node, QMainWindow):
             return
 
         img = map_config['image']
+        self.map_path = map_path
         self.map_derived_from_yaml = bool(map_config['derived_from_yaml'])
 
         if img.ndim == 2:
