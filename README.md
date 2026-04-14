@@ -1,14 +1,12 @@
-# CVRP Planner for Isaac Sim + Nav2
+# CVRP Planner 
+一个基于ROS2 Humble的多机器人任务分配与导航项目。
 
-一个面向 `ROS 2 Humble` 的多机器人任务分配与闭环导航示例项目。
-
-它把这几件事接到了一起：
-
-- `Isaac Sim` 仓库场景与多机器人
-- `Qt` 任务点选择界面
-- `CVRP` 任务分配
-- `Nav2 FollowWaypoints` 闭环执行
-- `RViz2` 路径与地图调试
+它包含了以下几个功能：
+- Isaac Sim仓库场景与多机器人仿真
+- Qt界面任务点选择
+- CVRP任务分配
+- Nav2 FollowWaypoints导航执行
+- RViz2路径显示
 
 ## 项目结构
 
@@ -24,6 +22,10 @@
   当前默认占据地图
 - `cvrp_planner/params/`
   默认参数与 Nav2 参数
+## 备注
+
+- 运行产物如 `build/`、`install/`、`log/`、策略图、结果 XML 和 Isaac 临时生成文件默认已忽略。
+- 许可证：`MIT`，见 `LICENSE`。
 
 ## 当前默认流程
 
@@ -85,8 +87,3 @@ colcon build --packages-select cvrp_planner --symlink-install
 source /opt/ros/humble/setup.bash
 colcon test --packages-select cvrp_planner
 ```
-
-## 备注
-
-- 运行产物如 `build/`、`install/`、`log/`、策略图、结果 XML 和 Isaac 临时生成文件默认已忽略。
-- 许可证：`MIT`，见 `LICENSE`。
