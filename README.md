@@ -1,4 +1,4 @@
-# CVRP Planner 
+# CVRP Planner on Isaac Sim
 一个基于ROS2 Humble的多机器人任务分配与导航项目。
 
 它包含了以下几个功能：
