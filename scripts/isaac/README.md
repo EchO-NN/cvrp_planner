@@ -2,7 +2,7 @@
 
 这个目录包含了当前闭环流程真正用到的 Isaac Sim 脚本。
 
-## 保留的脚本
+## 包含的脚本
 
 - `build_full_warehouse_nav_scene.py`
   基于 Isaac 官方 `full_warehouse.usd` 生成多机器人导航场景。
@@ -45,7 +45,7 @@ bash scripts/isaac/run_export_scene_occupancy_map.sh
 
 ## 说明
 
-- 所有运行期输出都写到 `scripts/isaac/generated/`，这个目录默认不纳入版本管理。
+- 所有运行期输出都写到 `scripts/isaac/generated/`
 - 默认导航场景配置见 `full_warehouse_nav_robots.example.json`。
 - 如果 Isaac 安装路径不是默认值，请先设置：
 
