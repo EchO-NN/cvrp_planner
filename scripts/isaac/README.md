@@ -1,6 +1,6 @@
 # Isaac Sim Scripts
 
-这个目录只保留当前闭环流程真正用到的 Isaac Sim 脚本。
+这个目录包含了当前闭环流程真正用到的 Isaac Sim 脚本。
 
 ## 保留的脚本
 
